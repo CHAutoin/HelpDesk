@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "_UserLayour";
+}
+<html>
+<head>
+
+    <link href="~/css/cpu_style.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./js/table_script.js"></script>
+    <script src="./js/popup.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <!--Start Menu -->
+    <header>
+        <div class="container">
+            <div id="brading">
+                <h1><span class="highlight">Help</span> Desk | Services</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li class="current"><a href="Services.html">Services</a></li>
+                    <li><a href="#content_list.html">list</a></li>
+                    <li>
+                        <div class="dorpdown">
+                            CustomTable
+                            <div class="dorpdown-content">
+                                <a>
+                                    <input type="checkbox" id="bordered">
+                                    <label for="bordered">เส้น<span id="l">เปิด</span></label>
+
+                                </a>
+                                <a>
+                                    <select name="table-color" id="table-color" style="padding: 5px;border-radius: 3px; border: 1px solid #4778d9; outline: none; font-size: 0.8em;">
+                                        <option value="table-mc-light-blue" selected>Color :Blue</option>
+                                        <option value="table-mc-light-cyan">Color :Cyan</option>
+                                        <option value="table-mc-light-green">Color :Green</option>
+                                    </select>
+                                </a>
+                                <a>
+                                    <input type="checkbox" id="hover" checked>
+                                    <label for="hover">Hover<span id="hov">เปิด</span></label>
+                                </a>
+                                <a>
+                                    <input type="checkbox" id="striped">
+                                    <label for="striped">Striped<span id="st">เปิด</span></label>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

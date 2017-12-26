@@ -1,0 +1,266 @@
+body{
+    font:15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* Clobal */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.dark{
+    padding: 15px;
+    background:#35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brading{
+    float: left;
+}
+
+header #brading h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    background: url('../img/showcase.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Newletter */
+#newsletter{
+    padding: 8px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#boxes .box{
+    float:left;
+    text-align: center;
+    width: 30%;
+    padding-top: 35px;
+}
+
+#boxes .box img{
+    width: 180px;
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width:30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+footer{
+    padding: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+    bottom: 0;
+}
+
+/* service */
+ul#services li{
+    list-style:none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+@media(max-width: 768px){
+    header #brading,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+    
+    #newsletter button, .quote button{
+        width: 40%;
+        display: inline-block;
+    }
+
+    #newsletter form input[type="email"] .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    
+}
+nav > ul > li > input{
+    outline: none;
+    padding: 7px;
+    font-size: 0.6em;
+    border:0px;
+    border-radius: 3px;
+    border:  2px solid #0080ff;
+    background-color: #ebebeb; 
+}
+nav > ul > li > input:focus{
+    border: 2px solid #0080ff;
+    transition: 0.3s;
+    padding-left: 15px;
+    padding: 7px;
+    border-radius: 6px; 
+    background-color: #ffffff;
+}
+
+#submit_lgn{ 
+    background-color: #00264d;
+    border:  2px solid #0080ff;
+    padding-left: 10px;
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    nav > ul > li > input{
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    #submit_lgn{
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+nav > ul > li > p{
+    float: left;
+    margin-top: -3px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+nav > ul > li > img{
+    position: absolute;
+    display: inline-block;
+    margin-top: -28px;
+}
+@media screen and (max-width: 768px){
+    nav > ul > li > p{
+    display: none;
+    float: none;
+    }
+    nav > ul > li > img{
+    margin-top: 2px;
+    float: right;
+    }
+}
