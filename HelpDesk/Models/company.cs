@@ -12,4 +12,7 @@ namespace HelpDesk.Models
 		public int compaID { get; set; }
 		public string companame { get; set; }
     }
+
+
+
 }
