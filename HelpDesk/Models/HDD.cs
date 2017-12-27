@@ -10,15 +10,15 @@ namespace HelpDesk.Models
     public class HDD
     {
 
-        public string hddsn { get; set; }
+        public string hddsnID { get; set; }
         public string hddbrand { get; set; }
         public string hddmodel { get; set; }
 
         public string size { get; set; }
 
-        public int tsid { get; set; }
-        public int staid { get; set; }
-        public string comid { get; set; }
+        public int tsID { get; set; }
+        public int staID { get; set; }
+        public string comID { get; set; }
         public int htid { get; set; }
         public DateTime hddbdate { get; set; }
 

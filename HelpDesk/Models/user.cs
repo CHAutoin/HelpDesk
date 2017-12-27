@@ -9,11 +9,11 @@ namespace HelpDesk.Models
 {
     public class user
     {
-		public string uid { get; set; }
+		public string uID { get; set; }
 		public string upass { get; set; }
 		public string uname { get; set; }
 		public string ulastname { get; set; }
-		public int rolesid { get; set; }
+		public int rolesID { get; set; }
 
 		public roles roles { get; set; }
 

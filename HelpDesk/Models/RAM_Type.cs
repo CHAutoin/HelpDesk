@@ -10,7 +10,7 @@ namespace HelpDesk.Models
     public class RAM_Type
     {
 
-        public int rtid { get; set; }
+        public int rtID { get; set; }
         public string rtname { get; set; }
         public ICollection<RAM> RAM { get; set; }
 

@@ -10,10 +10,10 @@ namespace HelpDesk.Models
     public class monitor_brand_model
     {
 
-        public string mbmid { get; set; }
+        public string mbmID { get; set; }
         public string mbmname { get; set; }
 
-        public string mobid { get; set; }
+        public string mobID { get; set; }
         public ICollection<monitor> monitor { get; set; }
     }
 }

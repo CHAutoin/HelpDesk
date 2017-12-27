@@ -9,9 +9,9 @@ namespace HelpDesk.Models
 {
     public class monitor
     {
-        public string sn { get; set; }
-        public string emid { get; set; }
-        public string mbmid { get; set; }
+        public string snID { get; set; }
+        public string emID { get; set; }
+        public string mbmID { get; set; }
         public DateTime bdate { get; set; }
 
 

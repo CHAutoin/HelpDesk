@@ -10,14 +10,14 @@ namespace HelpDesk.Models
     public class RAM
     {
 
-        public string ramsn { get; set; }
+        public string ramsnID { get; set; }
         public string rambrand { get; set; }
         public string rammodel { get; set; }
         public string size { get; set; }
 
-        public int tsid { get; set; }
-        public int staid { get; set; }
-        public string comid { get; set; }
+        public int tsID { get; set; }
+        public int staID { get; set; }
+        public string comID { get; set; }
         public int rtid { get; set; }
         public DateTime rambdate { get; set; }
 

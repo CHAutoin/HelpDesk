@@ -10,10 +10,10 @@ namespace HelpDesk.Models
     public class monitor_brand
     {
 
-        public string mobid { get; set; }
+        public string mobID { get; set; }
         public string mobname { get; set; }
         public string model { get; set; }
-        public string emid { get; set; }
+        public string emID { get; set; }
 
         public employee employee { get; set; }
 

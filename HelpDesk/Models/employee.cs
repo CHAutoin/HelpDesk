@@ -13,7 +13,7 @@ namespace HelpDesk.Models
         public string empass { get; set; }
         public string emname { get; set; }
         public string emlastname { get; set; }
-        public string secid { get; set; }
+        public string secID { get; set; }
         public section section { get; set; }
 
         public ICollection<monitor> monitor { get; set; }

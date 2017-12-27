@@ -10,7 +10,7 @@ namespace HelpDesk.Models
     public class statuscomponent
     {
 
-        public int stid { get; set; }
+        public int stID { get; set; }
         public string stname { get; set; }
         public ICollection<CPU> CPU { get; set; }
         public ICollection<HDD> HDD { get; set; }

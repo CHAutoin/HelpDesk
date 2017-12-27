@@ -9,7 +9,7 @@ namespace HelpDesk.Models
 {
     public class HDD_Type
     {
-        public int htid { get; set; }
+        public int htID { get; set; }
         public string htname { get; set; }
         public ICollection<HDD> HDD { get; set; }
     }

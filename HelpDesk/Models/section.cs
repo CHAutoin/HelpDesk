@@ -9,9 +9,9 @@ namespace HelpDesk.Models
 {
     public class section
     {
-        public string secid { get; set; }
+        public string secID { get; set; }
         public string secname { get; set; }
-        public string depid { get; set; }
+        public string depID { get; set; }
         public department department { get; set; }
 
 

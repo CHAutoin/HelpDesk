@@ -10,7 +10,7 @@ namespace HelpDesk.Models
     public class roles
     {
 
-	    public int rolesid { get; set; }
+	    public int rolesID { get; set; }
 		public string rolesname { get; set; }
 		public ICollection<user> user { get; set; }
     }
